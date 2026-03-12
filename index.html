@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia Santana</title>
+    <meta name="description" content="Tradição e Cuidado em Cada Dose. A sua farmácia de confiança em Morungaba desde 1967.">
+    <meta property="og:title" content="Farmácia Santana">
+    <meta property="og:description" content="Cuidando da sua família como se fosse a nossa.">
+    <meta property="og:image" content="https://farmaciasantanamorungaba.com.br/img/2.jpeg">
+    <meta property="og:url" content="https://farmaciasantanamorungaba.com.br">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#092b7c',
+                        secondary: '#d91d2a'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased overflow-x-hidden">
+
+    <header id="header" class="fixed w-full top-0 z-50 transition-transform duration-300 glass border-b border-white/20 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#inicio" class="text-2xl font-bold text-primary tracking-tight">FARMÁCIA SANTANA</a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-primary font-medium transition-colors">Início</a>
+                    <a href="#sobre" class="text-gray-700 hover:text-primary font-medium transition-colors">Sobre Nós</a>
+                    <a href="#servicos" class="text-gray-700 hover:text-primary font-medium transition-colors">Serviços</a>
+                    <a href="#galeria" class="text-gray-700 hover:text-primary font-medium transition-colors">Galeria</a>
+                    <a href="#contato" class="text-gray-700 hover:text-primary font-medium transition-colors">Contato</a>
+                </nav>
+
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/551140147313" target="_blank" class="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-5 py-2.5 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg shadow-green-500/30">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Peça pelo WhatsApp
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-primary focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden glass border-t border-white/20">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#inicio" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-white/50">Início</a>
+                <a href="#sobre" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-white/50">Sobre Nós</a>
+                <a href="#servicos" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-white/50">Serviços</a>
+                <a href="#galeria" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-white/50">Galeria</a>
+                <a href="#contato" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-white/50">Contato</a>
+                <a href="https://wa.me/551140147313" target="_blank" class="block px-3 py-2 mt-4 text-center rounded-md text-base font-bold text-white bg-green-500">WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="img/1.jpeg" alt="Interior Farmácia Sant'ana" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-black/60"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto fade-up">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-xl">Farmácia Santana</h1>
+            <p class="text-xl md:text-3xl text-gray-200 mb-10 font-light">Cuidando da sua família como se fosse a nossa!</p>
+            <a href="https://wa.me/551140147313" target="_blank" class="inline-flex items-center gap-3 bg-secondary hover:bg-red-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all transform hover:scale-105 shadow-2xl shadow-red-600/40">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                Faça seu Pedido
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 bg-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-section">
+            <h2 class="text-4xl font-bold text-primary mb-8">Sobre Nós</h2>
+            <div class="space-y-6 text-lg text-gray-600 leading-relaxed text-justify md:text-center">
+                <p>
+                    <strong class="text-primary block mb-2">Nossa História: Tradição e Cuidado em Cada Dose</strong>
+                    Em 1967, o jovem Claudio Rossi partia de Itatiba com um objetivo claro, mas sem dimensão da trajetória que estava prestes a iniciar. Ao chegar em Morungaba para assumir a única farmácia da cidade, ele não encontrou apenas um desafio profissional, mas o propósito de sua vida. Foi ali que a Farmácia Santana deu seus primeiros passos, unindo-se intrinsecamente ao desenvolvimento e à história do município.
+                </p>
+                <p>
+                    Ao lado de sua esposa, a professora Maria Cecília, Claudio construiu mais do que um balcão de atendimento; ele estabeleceu um porto seguro para a saúde da comunidade. O compromisso do casal com Morungaba foi além da farmácia, contribuindo ativamente para o crescimento da cidade através de mandatos públicos e ações sociais, o que consolidou o nome da família Rossi como sinônimo de ética e dedicação ao próximo.
+                </p>
+                <p>
+                    <strong class="text-primary block mt-6 mb-2">Evolução e Modernidade</strong>
+                    Com o passar das décadas, a Santana soube honrar suas raízes enquanto abraçava a inovação. De uma farmácia tradicional, evoluímos para um centro de manipulação moderno, diversificando nossos serviços para atender às complexas necessidades da ciência farmacêutica atual. Hoje, unimos a precisão tecnológica do nosso laboratório à sensibilidade do atendimento humanizado, garantindo que cada fórmula entregue carregue a exatidão técnica e o carinho de quem conhece seus clientes pelo nome.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-2xl shadow-sm border border-gray-100 mt-8 text-left">
+                    <strong class="text-primary block mb-4 text-center">Nosso Compromisso</strong>
+                    <ul class="list-disc pl-5 space-y-3">
+                        <li><strong>Missão:</strong> Cuidar de você de forma integral, promovendo saúde e alegria para que cada cliente viva sua plenitude.</li>
+                        <li><strong>Visão:</strong> Manter-se como a principal referência em atendimento humanizado e longevidade, oferecendo sempre a dose certa e ideal para a realização dos sonhos de nossos pacientes.</li>
+                        <li><strong>Valores:</strong> Atuamos com base no Respeito, Confiança, Ética, Profissionalismo e Cuidado constante.</li>
+                    </ul>
+                </div>
+                <p class="mt-8 font-medium text-primary text-xl">
+                    Santana Farmácia e Manipulação – Cuidando da sua família como se fosse a nossa.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 relative bg-gray-100 overflow-hidden">
+        <div class="absolute inset-0 bg-primary opacity-5 transform -skew-y-3 z-0"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 fade-in-section">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">Nossos Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <div class="glass-card p-8 rounded-3xl text-center transform transition-all hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="w-20 h-20 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-12 h-12 text-primary mx-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="currentColor"> <path fill="none" d="M0 0H24V24H0z" /> <path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" /> </g> </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Medicamentos</h3>
+                    <p class="text-gray-600">Ampla variedade de medicamentos de marca e genéricos, com a qualidade e segurança que você precisa para o seu tratamento.</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl text-center transform transition-all hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="w-20 h-20 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-12 h-12 text-primary mx-auto" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 442 442" xml:space="preserve"> <g> <path d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z" /> <path d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10 c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682 C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85 c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10 V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10 v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z" /> </g> </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Perfumaria</h3>
+                    <p class="text-gray-600">Produtos de higiene, beleza e cosméticos selecionados para o seu bem-estar diário e cuidados pessoais completos.</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl text-center transform transition-all hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="w-20 h-20 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-12 h-12 text-primary mx-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Atendimento</h3>
+                    <p class="text-gray-600">Equipe dedicada e atendimento humanizado, oferecendo a dose certa de atenção para a realização dos seus objetivos de saúde.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-section">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">Nossa Estrutura</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="img/1.jpeg" alt="Interior da Farmácia" class="w-full h-72 object-cover transform transition-transform duration-500 group-hover:scale-110">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="img/2.jpeg" alt="Fachada da Farmácia" class="w-full h-72 object-cover transform transition-transform duration-500 group-hover:scale-110">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-lg group bg-gray-200 flex items-center justify-center">
+                    <div class="w-full h-72 bg-gradient-to-br from-primary to-secondary opacity-80 flex items-center justify-center text-white text-xl font-bold p-6 text-center">
+                        Mais de 50 anos de história e dedicação.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-section">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">Contato e Localização</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <div class="glass-card p-10 rounded-3xl">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-8 border-b border-gray-200 pb-4">Informações da Empresa</h3>
+                    <ul class="space-y-6 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="font-bold w-32 text-primary">Razão Social:</span>
+                            <span class="flex-1">CLAUDIO ROSSI</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold w-32 text-primary">CNPJ:</span>
+                            <span class="flex-1">50.118.272/0001-69</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold w-32 text-primary">Endereço:</span>
+                            <span class="flex-1">PC JOAO PESSOA, 67<br>CENTRO<br>MORUNGABA - SP<br>CEP: 13.260-000</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold w-32 text-primary">Telefones:</span>
+                            <span class="flex-1">(11) 4014-7313 / (11) 4014-7252</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold w-32 text-primary">E-mail:</span>
+                            <span class="flex-1 break-all">FINANCEIRO@FARMASANTANA.COM.BR</span>
+                        </li>
+                    </ul>
+                    <div class="mt-10">
+                        <a href="https://wa.me/551140147313" target="_blank" class="w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-xl font-bold transition-colors shadow-lg">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                            Falar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="h-[500px] lg:h-auto rounded-3xl overflow-hidden shadow-lg border border-gray-200">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=Praça%20João%20Pessoa,%2067,%20Centro,%20Morungaba%20-%20SP&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-2xl font-bold mb-4 tracking-wider">FARMÁCIA SANTANA</h3>
+            <p class="mb-2 text-gray-300">CLAUDIO ROSSI - CNPJ: 50.118.272/0001-69</p>
+            <p class="mb-6 text-gray-400 text-sm">© <span id="year"></span> Todos os direitos reservados.</p>
+            <button id="btn-privacy" class="text-gray-300 hover:text-white underline text-sm transition-colors">
+                Política de Privacidade
+            </button>
+        </div>
+    </footer>
+
+    <div id="modal-privacy" class="hidden fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-3xl max-w-2xl w-full p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button id="close-modal" class="absolute top-6 right-6 text-gray-500 hover:text-red-500 transition-colors">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h2 class="text-3xl font-bold text-primary mb-6">Política de Privacidade</h2>
+            <div class="text-gray-600 space-y-4 text-justify">
+                <p>A Farmácia Santana compromete-se com a privacidade e a segurança dos dados de seus clientes. Este site tem caráter exclusivamente informativo e institucional.</p>
+                <p>Não coletamos informações pessoais identificáveis diretamente através do preenchimento de formulários neste site. O contato via botão de WhatsApp redireciona o usuário para o aplicativo de mensagens, aplicando-se as políticas de privacidade da referida plataforma.</p>
+                <p>Podemos utilizar tecnologias genéricas como cookies analíticos apenas para entender métricas básicas de tráfego, sem identificação pessoal, visando melhorar a experiência do usuário. Ao continuar a navegação, você concorda com nossa política.</p>
+            </div>
+            <div class="mt-8 text-right">
+                <button id="close-modal-btn" class="bg-primary hover:bg-blue-900 text-white px-6 py-3 rounded-xl font-bold transition-colors">
+                    Entendi
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
